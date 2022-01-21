@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="WPF_Quieres_Ser_Mi_Novia.UserControls.UCQuestion"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_Quieres_Ser_Mi_Novia.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1600">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/Background.jpg" />
+        </Grid.Background>
+
+        <TextBlock
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Margin="0,250,0,0"
+            Text="Quieres ser mi novia socia???"
+            FontSize="60"
+        />
+
+        <Button
+            Name="Nao"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Margin="600,150,0,0"
+            Height="80"
+            Width="200"
+            Content="Nao :c"
+            FontSize="50"
+        />
+        <Button
+            Name="Yep"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Margin="0,150,600,0"
+            Height="80"
+            Width="200"
+            Content="Yep :3"
+            FontSize="50"
+            Click="SzsSzs"
+        />
+    </Grid>
+</UserControl>

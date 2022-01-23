@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_Quieres_Ser_Mi_Novia.Class;
 
 namespace WPF_Quieres_Ser_Mi_Novia.UserControls
 {
@@ -20,9 +21,21 @@ namespace WPF_Quieres_Ser_Mi_Novia.UserControls
     /// </summary>
     public partial class UCEnd : UserControl
     {
+        #region Propiedades
+
+
+        #endregion
+
+        #region Constructor
         public UCEnd()
         {
             InitializeComponent();
+        }
+        #endregion
+
+        private void BtnBack_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Utilities.navigator.Navigate(UserControlView.Question);
         }
     }
 }

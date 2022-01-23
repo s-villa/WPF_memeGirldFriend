@@ -11,14 +11,37 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Images/Background.jpg" />
         </Grid.Background>
-        <Button
+        <TextBlock
+            FontWeight="SemiBold"
+            Text="Buenos dias, tardes o sepa dios en que momento estes leyendo esto xd, le hice esta porqueria de programa para decirte algo....
+            para nada estaba desparchado y me puse a hacer la primera mrkda que se me vino a la mente :3"
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
-            Height="80"
-            Width="200"
-            Content="Next"
-            FontSize="50"
-            Click="Button_Click"
+            FontSize="40"
+            Width="800"
+            TextAlignment="Center"
+            TextWrapping="Wrap"
         />
+        <Border
+            x:Name="BrdNao"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Background="SkyBlue"
+            Height="80"
+            Width="300"
+            CornerRadius="50"
+            Margin="0,500,0,0"
+            MouseDown="Button_Click"
+            Cursor="Hand"
+            Panel.ZIndex="10000"
+        >
+            <TextBlock
+                FontWeight="SemiBold"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontSize="35"
+                Text="¿Khe es esta shit?"
+            />
+        </Border>
     </Grid>
 </UserControl>

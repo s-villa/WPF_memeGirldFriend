@@ -44,6 +44,7 @@ namespace WPF_Quieres_Ser_Mi_Novia
                 Utilities.navigator.Navigate(UserControlView.Presentation);
 
                 DataContext = Utilities.navigator;
+
             }
             catch (Exception ex)
             {

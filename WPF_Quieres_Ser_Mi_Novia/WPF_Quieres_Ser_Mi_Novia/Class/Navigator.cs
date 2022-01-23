@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using WPF_Quieres_Ser_Mi_Novia.UserControls;
 
@@ -33,7 +34,7 @@ namespace WPF_Quieres_Ser_Mi_Novia.Class
         #endregion
 
         #region Metodos
-        public void Navigate(UserControlView newWindow, object data = null)
+        public void Navigate(UserControlView newWindow, object data = null) => Application.Current.Dispatcher.Invoke((Action)delegate
         {
             try
             {
@@ -53,7 +54,8 @@ namespace WPF_Quieres_Ser_Mi_Novia.Class
             catch (Exception ex)
             {
             }
-        }
+            GC.Collect();
+        });
         #endregion
     }
 }

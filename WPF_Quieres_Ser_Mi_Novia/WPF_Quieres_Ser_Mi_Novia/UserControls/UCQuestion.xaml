@@ -14,31 +14,53 @@
         <TextBlock
             VerticalAlignment="Top"
             HorizontalAlignment="Center"
+            TextAlignment="Center"
+            FontWeight="SemiBold"
             Margin="0,250,0,0"
-            Text="Quieres ser mi novia socia???"
+            Width="1000"
+            Text="¿¿¿Era para preguntarle bella dama si usted tendria la amabilidad de ser mi hermosa novia :3???"
+            TextWrapping="Wrap"
             FontSize="60"
         />
-
-        <Button
-            Name="Nao"
+        <Border
+            x:Name="BrdNao"
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
-            Margin="600,150,0,0"
+            Background="SkyBlue"
             Height="80"
             Width="200"
-            Content="Nao :c"
-            FontSize="50"
-        />
-        <Button
-            Name="Yep"
+            CornerRadius="50"
+            Margin="600,300,0,0"
+            MouseEnter="BrdNao_MouseEnter"
+            Cursor="Hand"
+            Panel.ZIndex="10000"
+        >
+            <TextBlock
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontSize="45"
+                Text="Nao :c"
+            />
+        </Border>
+        
+        <Border
+            x:Name="BrdYeh"
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
-            Margin="0,150,600,0"
+            Background="SkyBlue"
             Height="80"
             Width="200"
-            Content="Yep :3"
-            FontSize="50"
-            Click="SzsSzs"
-        />
+            CornerRadius="50"
+            Margin="0,300,600,0"
+            MouseDown="BrdYeh_MouseDown"
+            Cursor="Hand"
+        >
+            <TextBlock
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontSize="45"
+                Text="Yeeh :3"
+            />
+        </Border>
     </Grid>
 </UserControl>

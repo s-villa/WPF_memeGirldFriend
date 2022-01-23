@@ -21,20 +21,50 @@ namespace WPF_Quieres_Ser_Mi_Novia.UserControls
     /// </summary>
     public partial class UCQuestion : UserControl
     {
+        #region Propiedades
+
+        Random random;
+
+        #endregion
+
+        #region Constructor
         public UCQuestion()
         {
             InitializeComponent();
         }
+        #endregion
 
-        //private void Nao(object sender, RoutedEventArgs e)
-        //{
-
-        //}
-
-        private void SzsSzs(object sender, RoutedEventArgs e)
+        #region Events
+        private void BrdYeh_MouseDown(object sender, MouseButtonEventArgs e)
         {
             Utilities.navigator.Navigate(UserControlView.End);
-
         }
+        private void BrdNao_MouseEnter(object sender, MouseEventArgs e)
+        {
+            ChangePosition();
+        }
+        #endregion
+
+        #region Metodos
+
+        private void ChangePosition()
+        {
+            random = new Random();
+
+            int probability = random.Next(1, 3);
+            int Pst1 = random.Next(10,1300);
+            int Pst2 = random.Next(10,700);
+            int Pst4 = random.Next(10,700);
+
+            if (probability == 1)
+            {
+                BrdNao.Margin = new Thickness(Pst1, Pst2, 0, 0);
+            }
+            else
+            {
+                BrdNao.Margin = new Thickness(Pst1, 0, 0, Pst4);
+            }
+        }
+        #endregion
     }
 }

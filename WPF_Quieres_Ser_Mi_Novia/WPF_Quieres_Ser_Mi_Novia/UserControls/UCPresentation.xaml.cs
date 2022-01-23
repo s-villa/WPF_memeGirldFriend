@@ -19,16 +19,24 @@ namespace WPF_Quieres_Ser_Mi_Novia.UserControls
     /// <summary>
     /// Lógica de interacción para UCPresentation.xaml
     /// </summary>
-    public partial class UCPresentation : UserControl
+    public partial class UCPresentation 
     {
+        #region Propiedades
+
+        #endregion
+
+        #region Constructor
         public UCPresentation()
         {
             InitializeComponent();
-        }
+        } 
+        #endregion
 
+        #region Events
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Utilities.navigator.Navigate(UserControlView.Question);
-        }
+        } 
+        #endregion
     }
 }

@@ -11,12 +11,25 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Images/Background.jpg" />
         </Grid.Background>
+        <Image
+            x:Name="BtnBack"
+            Source="/Images/BtnBack.png"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right"
+            Height="80"
+            Margin="0,20,20,0"
+            MouseDown="BtnBack_MouseDown"
+            Cursor="Hand"
+        />
         <TextBlock
-            
-            Text="MORDIDO UN PERRO :3"
+            FontWeight="SemiBold"
+            Text="Tan Lindaaaaaaaaaaaaa obvio no te voy a pedir que seas mi novia de esta manera tan patetica pero no faltaron las risas Jasjasjas.             Love youuuuuuu ♥♥♥"
             VerticalAlignment="Center"
             HorizontalAlignment="Center"
-            FontSize="80"
+            FontSize="60"
+            Width="800"
+            TextAlignment="Center"
+            TextWrapping="Wrap"
         />
     </Grid>
 </UserControl>

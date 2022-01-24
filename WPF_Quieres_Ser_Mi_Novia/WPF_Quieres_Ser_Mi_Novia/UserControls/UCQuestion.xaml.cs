@@ -37,7 +37,7 @@ namespace WPF_Quieres_Ser_Mi_Novia.UserControls
         #region Events
         private void BrdYeh_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Utilities.navigator.Navigate(UserControlView.End);
+            MainWindow.navigator.Navigate(UserControlView.End);
         }
         private void BrdNao_MouseEnter(object sender, MouseEventArgs e)
         {

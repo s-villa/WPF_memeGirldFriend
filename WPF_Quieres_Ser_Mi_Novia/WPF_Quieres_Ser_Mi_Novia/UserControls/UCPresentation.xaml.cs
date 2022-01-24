@@ -35,7 +35,7 @@ namespace WPF_Quieres_Ser_Mi_Novia.UserControls
         #region Events
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Utilities.navigator.Navigate(UserControlView.Question);
+            MainWindow.navigator.Navigate(UserControlView.Question);
         } 
         #endregion
     }

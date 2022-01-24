@@ -21,6 +21,11 @@ namespace WPF_Quieres_Ser_Mi_Novia
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region "Propiedades"
+        public static Navigator navigator { get; set; }
+
+        #endregion
+
         #region Constructor
         public MainWindow()
         {
@@ -36,15 +41,14 @@ namespace WPF_Quieres_Ser_Mi_Novia
         {
             try
             {
-                if (Utilities.navigator == null)
+                if (navigator == null)
                 {
-                    Utilities.navigator = new Navigator();
+                    navigator = new Navigator();
                 }
 
-                Utilities.navigator.Navigate(UserControlView.Presentation);
+                navigator.Navigate(UserControlView.Presentation);
 
-                DataContext = Utilities.navigator;
-
+                DataContext = navigator;
             }
             catch (Exception ex)
             {

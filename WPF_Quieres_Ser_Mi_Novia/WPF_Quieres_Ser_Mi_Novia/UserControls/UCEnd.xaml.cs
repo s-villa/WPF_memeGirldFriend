@@ -35,7 +35,7 @@ namespace WPF_Quieres_Ser_Mi_Novia.UserControls
 
         private void BtnBack_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Utilities.navigator.Navigate(UserControlView.Question);
+            MainWindow.navigator.Navigate(UserControlView.Question);
         }
     }
 }

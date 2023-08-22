@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "mu2MOjfa99I9elftIYCpp9VaUqedO4U4HlhUC3T6Hox+jlobseEYgrqMyWSg/hugOiKfO1OlcS/pEyFR4Xi+aw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Santiago\\Documents\\GitHub\\Repos\\WPF_memeGirldFriend\\WPF_memeGirldFriend\\WPF_Quieres_Ser_Mi_Novia\\WPF_Quieres_Ser_Mi_Novia.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Santiago\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\system.runtime\\4.3.1\\system.runtime.4.3.1.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\system.runtime.extensions\\4.3.1\\system.runtime.extensions.4.3.1.nupkg.sha512"
+  ],
+  "logs": []
+}

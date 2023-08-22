@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="WPF_Quieres_Ser_Mi_Novia.UserControls.UCEnd"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WPF_Quieres_Ser_Mi_Novia.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="800"
+             d:DesignWidth="1600">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/Background.jpg" />
+        </Grid.Background>
+        <Image
+            x:Name="BtnBack"
+            Source="/Images/BtnBack.png"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Right"
+            Height="80"
+            Margin="0,20,20,0"
+            MouseDown="BtnBack_MouseDown"
+            Cursor="Hand"
+        />
+        <TextBlock
+            FontWeight="SemiBold"
+            Text="Zzzz"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="60"
+            Width="800"
+            TextAlignment="Center"
+            TextWrapping="Wrap"
+        />
+    </Grid>
+</UserControl>
